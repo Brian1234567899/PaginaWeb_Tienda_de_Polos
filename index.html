@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+ 
+ <header><i>Kriptonia Tu Tienda de Polos Urbanos</i></header>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(img/img1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img2.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img4.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img6.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img7.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img8.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img9.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img10.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img6.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img7.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img8.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img9.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/img10.png)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+<div class="container">
+  <h1>Polos en Stock</h1>
+
+  <div class="brand">Kriptonia</div>
+
+  <div class="product">
+    <img src="img/polo1.jpg" alt="Polo 1">
+
+    <div class="product-info">
+      <h2 class="product-title">Polo 1</h2>
+      <p class="product-price">S/ 55</p>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="img/polo2.jpg" alt="Polo 2">
+
+    <div class="product-info">
+      <h2 class="product-title">Polo 2</h2>
+      <p class="product-price">S/ 55</p>
+    </div>
+  </div>
+</body>
+</html>
